@@ -21,7 +21,7 @@ const NavBar = () => {
                 <span className={`w-8 h-[2px] bg-white ${visible? 'opacity-0' :''}`}></span>
                 <span className={`w-8 h-[2px] bg-white  ${visible? '-rotate-45 absolute z-[1] transition-transform duration-2 delay-75 ease-in-out': ''}`}></span>
             </button>
-            <nav className={`w-full absolute z-[4] top-[94px] right-0 h-[80vh] md:w-[60%] md:static md:h-16 ${visible ? 'flex' : 'hidden'} md:flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 sm:bg-slate-700 text-white sm:bg-opacity-70 md:bg-transparent md:text-black md:backdrop-blur-none`}>
+            <nav className={`w-full absolute z-[4] top-[94px] right-0 h-[80vh] md:w-[60%] md:static md:h-16 ${visible ? 'flex' : 'hidden'} md:flex flex-col md:flex-row justify-around items-center space-y-4 md:space-y-0 sm:bg-slate-700 text-white sm:bg-opacity-70 sm:backdrop-blur-lg sm:backdrop-brightness-50 md:bg-transparent md:text-black md:backdrop-blur-none`}>
             <NavLink to="/" className={({ isActive }) =>`${isActive ? "border-[1px] border-white" : ""} w-[80%] md:h-full sm:h-16 md:w-1/5 text-xl font-bold text-center pt-4 text-white rounded-md`}>Home</NavLink>
             <NavLink to="/About-us" className={({ isActive }) =>`${isActive ? "border-[1px] border-white" : ""} w-[80%] md:h-full sm:h-16 md:w-1/5 text-xl font-bold text-center pt-4 text-white rounded-md`}>Who We Are</NavLink>
             <NavLink to="/Projects" className={({ isActive }) =>`${isActive ? "border-[1px] border-white" : ""} w-[80%] md:h-full sm:h-16 md:w-1/5 text-xl font-bold text-center pt-4 text-white rounded-md`}>Projects</NavLink>
